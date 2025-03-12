@@ -20,3 +20,5 @@ export async function commandLineInterface() {
     });
   }
 }
+
+await commandLineInterface();
