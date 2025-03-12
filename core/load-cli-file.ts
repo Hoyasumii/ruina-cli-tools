@@ -1,8 +1,8 @@
-import { ReadCLIFile } from "models";
+import { ReadCLIFile } from "@/models/index.js";
 import { readFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
-import { CLIFileNotFoundError, InvalidCLIFileError } from "@/errors";
+import { CLIFileNotFoundError, InvalidCLIFileError } from "@/errors/index.js";
 
 export async function loadCLIFile(): Promise<ReadCLIFile> {
   const CLIFilePath = path.join(process.env.PWD!, "cli.json");

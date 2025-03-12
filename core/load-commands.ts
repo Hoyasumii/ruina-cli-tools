@@ -1,4 +1,4 @@
-import { ReadCLIFile } from "@/models";
+import { ReadCLIFile } from "@/models/index.js";
 
 export function loadCommands(CLIFile: ReadCLIFile): Record<string, string> {
   const commands: Record<string, string> = {};

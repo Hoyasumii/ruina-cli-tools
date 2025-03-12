@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { loadCLIFile, loadCommands } from "@/core";
+import { loadCLIFile, loadCommands } from "@/core/index.js";
 import { argv } from "node:process";
 import { execFile } from "node:child_process";
 

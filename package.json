@@ -1,6 +1,6 @@
 {
   "name": "ruina-cli",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "CLI Tools Made for Ruina",
   "type": "module",
   "main": "dist/index.js",
