@@ -10,7 +10,10 @@ export async function commandLineInterface() {
 
   const commands = loadCommands(CLIFile);
 
-  if (args.length === 0 || !(args[0] in commands)) console.log("Display Help");
+  if (args.length === 0 || !(args[0] in commands)) {
+    console.log("Display Help");
+    exit(0);
+  }
 
   const { stdout } = execFile("node", args);
 
@@ -22,7 +25,7 @@ export async function commandLineInterface() {
     });
   }
 
-  exit();
+  exit(0);
 }
 
 await commandLineInterface();
