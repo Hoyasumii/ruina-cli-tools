@@ -1,1 +1,1 @@
-export { ReadCLIFile } from "./read-cli-file";
+export { ReadCLIFile } from "./read-cli-file.js";

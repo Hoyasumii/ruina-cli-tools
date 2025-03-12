@@ -1,2 +1,2 @@
-export { CLIFileNotFoundError } from "./cli-file-not-found";
-export { InvalidCLIFileError } from "./invalid-cli-file";
+export { CLIFileNotFoundError } from "./cli-file-not-found.js";
+export { InvalidCLIFileError } from "./invalid-cli-file.js";
