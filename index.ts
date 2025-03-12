@@ -2,7 +2,7 @@ import { loadCLIFile, loadCommands } from "@/core";
 import { argv } from "node:process";
 import { execFile } from "node:child_process";
 
-async function commandLineInterface() {
+export async function commandLineInterface() {
   const CLIFile = await loadCLIFile();
   const args = argv.slice(2);
 
@@ -20,5 +20,3 @@ async function commandLineInterface() {
     });
   }
 }
-
-await commandLineInterface();
