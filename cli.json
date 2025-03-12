@@ -1,0 +1,10 @@
+{
+  "name": "☁️ Ruina",
+  "description": "Opined Fastify Framework",
+  "commands": [
+    {
+      "title": "whoami",
+      "action": "node whoami.js"
+    }
+  ]
+}
