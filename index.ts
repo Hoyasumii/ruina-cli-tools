@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { loadCLIFile, loadCommands } from "@/core";
 import { argv } from "node:process";
 import { execFile } from "node:child_process";
