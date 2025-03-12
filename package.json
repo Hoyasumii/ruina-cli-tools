@@ -1,6 +1,6 @@
 {
   "name": "ruina-cli",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "CLI Tools Made for Ruina",
   "type": "module",
   "main": "dist/index.js",
@@ -17,6 +17,11 @@
   },
   "bin": {
     "ruina": "dist/index.js"
+  },
+  "exports": {
+    "./core": "./dist/core/index.js",
+    "./errors": "./dist/errors/index.js",
+    "./models": "./dist/models/index.js"
   },
   "keywords": [],
   "author": "Alan Reis Anjos <alanreisanjo@gmail.com>",
