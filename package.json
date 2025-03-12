@@ -1,5 +1,5 @@
 {
-  "name": "@ruina/cli",
+  "name": "ruina-cli",
   "version": "0.0.1",
   "description": "CLI Tools Made for Ruina",
   "type": "module",
