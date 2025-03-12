@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { loadCLIFile, loadCommands } from "@/core/index.js";
-import { argv } from "node:process";
+import { argv, exit } from "node:process";
 import { execFile } from "node:child_process";
 
 export async function commandLineInterface() {
@@ -21,6 +21,8 @@ export async function commandLineInterface() {
       console.log(output.slice(0, output.length - 1));
     });
   }
+
+  exit();
 }
 
 await commandLineInterface();
