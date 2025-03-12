@@ -1,0 +1,16 @@
+{
+  "name": "🌪️  Ruina",
+  "description": "Opined Fastify Framework",
+  "commands": [
+    {
+      "title": "make",
+      "description": "Create an file",
+      "action": "./dist/scripts/make2"
+    },
+    {
+      "title": "tes",
+      "description": "asd",
+      "action": "a.js"
+    }
+  ]
+}

@@ -18,6 +18,8 @@ export async function commandLineInterface() {
     exit(0);
   }
 
+  console.log(args);
+
   const { stdout } = await exec("node", args.slice(1));
 
   console.log(stdout);
