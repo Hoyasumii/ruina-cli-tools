@@ -3,7 +3,7 @@
 import { loadCLIFile, loadCommands } from "@/core/index.js";
 import { argv, exit } from "node:process";
 import { execFile } from "node:child_process";
-import { promisify } from 'node:util';
+import { promisify } from "node:util";
 
 const exec = promisify(execFile);
 
@@ -19,14 +19,6 @@ export async function commandLineInterface() {
   }
 
   const { stdout } = await exec("node", args);
-
-  // const outCollection = await stdout.toArray()!;
-
-  // if (outCollection.length > 0) {
-  //   outCollection.forEach((output: string) => {
-  //     console.log(output.slice(0, output.length - 1));
-  //   });
-  // }
 
   console.log(stdout);
 
