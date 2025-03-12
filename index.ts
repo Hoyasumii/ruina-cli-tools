@@ -20,7 +20,9 @@ export async function commandLineInterface() {
 
   console.log(args);
 
-  const { stdout } = await exec("node", args.slice(1));
+  const [commandName, otherArgs] = args;
+
+  const { stdout } = await exec("node", [commandName, ...otherArgs]);
 
   console.log(stdout);
 
